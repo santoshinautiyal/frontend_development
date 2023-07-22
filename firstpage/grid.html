@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+        <style type="text/CSS">
+            .main {
+                width: 700px;
+                height:550px;
+                border: 2px black solid;
+                padding: 10px;
+                margin:auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto;   /* u can just type auto here in place of these pixels*/
+               /* grid-column-gap:5px;
+                grid-row-gap:5px;     */
+                grid-gap:10px 10px;
+            }
+            .main div{
+                padding:50px;
+                font-size: 50px;
+                background:aqua;
+                border:1px black solid ;
+            }
+            #div1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="main">
+        <div id="div1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div> 
+    </body>
+</html>

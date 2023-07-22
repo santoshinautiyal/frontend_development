@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/CSS">
+            .box-container{
+                width:600px;height:600px;
+                border:2px black solid;
+                margin:auto;
+                position: relative;
+            }
+            .box{
+                width:200px;
+                height:200px;
+                background-color: rgb(212, 54, 54);
+                position: absolute;
+                top: 0px;
+                left:0px;
+                animation: box 2s 2;
+                animation-fill-mode: forwards;   /*can be both , forward, backward*/
+                animation-direction: alternate-reverse;    /* can be alternate or reverse or can be normal*/
+              /*  animation-duration: 1s;
+                /*animation-delay: 1s;*/
+              /*  animation-iteration-count: infinite;*/
+            }
+            @keyframes box{
+                  0%{
+                    top:0px;
+                    left:0px;
+                    background:  rgb(212, 54, 54);
+                  }
+                  25%{
+                    top: 0px;
+                    left:400px;
+                    background:yellowgreen;
+                  }
+                  50%{
+                    top:400px;
+                    left:400px;
+                    background:blue;
+                  }
+                  75%{
+                    top:400px;
+                    left:0px;
+                    background: green;
+                  }
+                  100%{
+                    top:0px;
+                    left:0px;
+                    background:red;
+                  }
+            }
+        </style>
+    </head>
+    <body>
+       <div class="box-container">
+        <div class="box"></div>
+       </div>
+    </body>
+</html>
+

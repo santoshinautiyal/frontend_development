@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0 "/>
+        <title>foreach loop</title>
+    </head>
+    <body></body>
+    <script>
+        var cars=["car1","car2","car3","car4","car5"];
+        cars.forEach(car);                             //func call(car is func here not a variable)
+        function car(item,index,array){                //-------this func change in the array data
+         //document.write(index+"=>" +item+"<br/>");
+         array[index]=item+" 0";  
+        }
+        
+        cars.forEach(after);
+        function after(item,index){                //-------this func print the array data
+         document.write(index+"=>" +item+"<br/>");
+         
+        }
+    </script>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0 "/>
+        <title></title>
+    </head>
+    <body>
+        <h1 id="res"></h1>
+        <button onclick="getdate()">Date</button>
+        <button onclick="year()">Year</button>
+        <button onclick="month()">Month</button>
+        <button onclick="hours()">hours</button>
+    </body>
+    <script>
+        var date=new Date();
+        function getdate(){
+            document.getElementById('res').innerText=date;
+        }
+        function year(){
+            document.getElementById('res').innerText=date.getFullYear();
+        }
+        function month(){
+            var month=["Januarary","february","march","april","may","june","july","august","september","october","november","december"];
+            document.getElementById('res').innerText=month[date.getMonth()];
+        }
+        function hours(){
+            document.getElementById('res').innerText=date.getHours();}
+    </script>
+</html>
+
+

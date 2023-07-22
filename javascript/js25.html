@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <script type="text/javascript">
+        var my;
+        function start(){
+           my=setTimeout(
+            function(){
+               document.write("<h1>My name is Santoshi Nautiyal</h1>");
+            },
+            5000
+           );
+        }
+        function stop(){
+           clearTimeout(my);
+           alert("time out stopped")
+        }
+    </script>
+    <body>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </body>
+    
+</html>
+

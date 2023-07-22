@@ -1,0 +1,14 @@
+.main{
+    width:1000px;
+    height:400px;
+    background:rgb(249, 5, 127);
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main:hover{
+    background: blueviolet;
+    color: black;
+    height:200px;
+}

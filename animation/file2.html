@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aman guuuu</title>
+        <style type="text/CSS">
+            .main{
+                width:700px;height:150px;
+                border:2px black solid;
+                margin:50px auto;
+                position: relative;
+            }
+            .box{
+                width:200px;
+                height:100px;
+                margin-top: 20px;
+                background-color: rgb(212, 54, 54);
+                position: absolute;
+                animation: box 4s;
+                animation-timing-function: ease-in-out;  /* can be ease and linear and can be ease-in and ease -in-out*/
+               
+            }
+            @keyframes box{
+                 from{
+                    left: 0px;
+                 }
+                 to{
+                    left:500px;
+                 }
+            }
+        </style>
+    </head>
+    <body>
+       <div class="main">
+        <div class="box"><h2>ease -in-out</h2></div>
+       </div>
+    </body>
+</html>
+

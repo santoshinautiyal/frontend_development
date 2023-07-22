@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+       
+        <title></title>
+    </head>
+    <body>
+        <input type="" name="user_name">
+        <button onclick="getName()">Submit</button>
+        <h1></h1>
+    </body>
+    <script type="text/javascript">
+        function getName(){
+            var uName=document.getElementsByName('user_name')[0].value;
+            //console.log(uName);
+            document.getElementsByName('user_name')[0].value="";
+            document.getElementsByTagName("h1")[0].innerHTML=uName;
+        }
+    </script>
+</html>
+
